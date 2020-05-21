@@ -25,7 +25,7 @@ end                              # indent to align with def
 end                              # extra end
 
 def self.cards_total(cards)
-  total                         # should be let total = 0
+  total                         # should be total = 0
   for card in cards
     total += card.value
     return "You have a total of" + total  # missing space between of and the end quote
