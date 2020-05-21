@@ -7,7 +7,7 @@
 class CardGame
 
 
-  def checkforAce(card)
+  def checkforAce(card)   # incorrect case - should be checkForAce(card)
     if card.value = 1
       return true
     else
@@ -15,20 +15,20 @@ class CardGame
     end
   end
 
-  dif highest_card(card1 card2)
-  if card1.value > card2.value
-    return card
+  dif highest_card(card1 card2)  # dif should be def, missing comma between parameters
+  if card1.value > card2.value   # the if else should be indented
+    return card                  # should be card1
   else
     return card2
   end
-end
-end
+end                              # indent to align with def
+end                              # extra end
 
 def self.cards_total(cards)
-  total
+  total                         # should be let total = 0
   for card in cards
     total += card.value
-    return "You have a total of" + total
+    return "You have a total of" + total  # missing space between of and the end quote
   end
 end
 ```
