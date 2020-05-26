@@ -7,7 +7,7 @@
 class CardGame
 
 
-  def checkforAce(card)   # incorrect case - should be checkForAce(card)
+  def checkforAce(card)   # incorrect formatting - should be check_for_ace(card)
     if card.value = 1     # should be ==
       return true
     else
