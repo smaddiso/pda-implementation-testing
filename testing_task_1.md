@@ -30,5 +30,6 @@ def self.cards_total(cards)
     total += card.value
     return "You have a total of" + total  # missing space between of and the end quote, total.to_s
   end                                     # the return on line 31 should be after this end (on line 33)
+
 end
 ```
