@@ -8,7 +8,7 @@ class CardGame
 
 
   def checkforAce(card)   # incorrect case - should be checkForAce(card)
-    if card.value = 1
+    if card.value = 1     # should be ==
       return true
     else
       return false
@@ -25,10 +25,10 @@ end                              # indent to align with def
 end                              # extra end
 
 def self.cards_total(cards)
-  total                         # should be total = 0
+  total                                   # should be total = 0
   for card in cards
     total += card.value
-    return "You have a total of" + total  # missing space between of and the end quote
-  end
+    return "You have a total of" + total  # missing space between of and the end quote, total.to_s
+  end                                     # the return on line 31 should be after this end (on line 33)
 end
 ```
